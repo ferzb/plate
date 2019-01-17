@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="description about page">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+		<title>Plate | Edit User</title>
+		<link rel="shortcut icon" href="">
+		<!--[if gt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/simple-sidebar.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+	<!-- start header nav -->
+		<header>
+			<div class="flex flex-sb flex-vertical-center">
+				<div class="header-box flex">
+					<!--start logo block page-->
+					<div class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"><span>plate</span></a></div>
+					<!--end logo block page-->
+
+					<!--start toggle block page-->
+					<div id="menu-toggle" class="block-toggle">
+						<span class="nav-toggle-block">
+							<i class="nav-toggle-line"></i>
+							<i class="nav-toggle-line"></i>
+							<i class="nav-toggle-line"></i>
+						</span>
+					</div>
+					<!--end toggle block page-->
+				</div>
+
+				<div class="search-box">
+					<input id="global-search" type="search" placeholder="Search for users, payments, restaurants…">
+				</div>
+
+				<div class="profile-box flex flex-vertical-center">
+					<div class="profile-icon">H</div>
+					<div class="profile-inner"><span class="user-name">Haitham Al-Khatib</span><br><small class="user-status">Admin</small></div>
+				</div>
+			</div>
+		</header>
+	<!-- end header nav -->
+
+	<!-- start main page -->
+		<main>
+			<!-- #wrapper -->
+			<div id="wrapper">
+
+		        <!-- Sidebar -->
+		        <div id="sidebar-wrapper">
+		            <ul class="sidebar-nav">
+		            	<!-- Users -->
+		                <li class="nav-item">Users
+		                	<ul>
+		                		<li><a href="app-user.html">App Users</a></li>
+			                    <li><a href="reastaurant-user.html">Restaurant Users</a></li>
+			                    <li><a href="team-user.html">Team Users</a></li>
+		                	</ul>
+		                </li>
+
+		                <!-- Activity -->
+		                <li class="nav-item">Activity
+		                	<ul>
+		                		<li><a href="#">All Tables</a></li>
+			                    <li><a href="#">Active Tables</a></li>
+			                    <li><a href="#">All Pickups</a></li>
+			                    <li><a href="#">Active Pickups</a></li>
+		                	</ul>
+		                </li>
+
+		                <!-- Restaurants -->
+		                <li class="nav-item">Restaurants
+		                	<ul>
+		                		<li><a href="reastaurant.html">Restaurants</a></li>
+			                    <li><a href="#">Menus</a></li>
+			                    <li><a href="categories.html">Categories</a></li>
+		                	</ul>
+		                </li>
+
+		                <!-- Marketing -->
+		                <li class="nav-item">Marketing
+		                	<ul>
+		                		<li><a href="#">Promotions</a></li>
+			                    <li><a href="#">Push Notifications</a></li>
+		                	</ul>
+		                </li>
+
+		                <!-- Finance -->
+		                <li class="nav-item">Finance
+		                	<ul>
+		                		<li><a href="#">Invoices</a></li>
+			                    <li><a href="#">Credit Invoices</a></li>
+			                    <li><a href="#">User Payments</a></li>
+			                    <li><a href="#">Restaurant Payments</a></li>
+		                	</ul>
+		                </li>
+
+		                <!-- Reports -->
+		                <li class="nav-item">Reports
+		                	<ul>
+		                		<li><a href="#">Lorem ipsum.</a></li>
+			                    <li><a href="#">Lorem ipsum.</a></li>
+			                    <li><a href="#">Lorem ipsum.</a></li>
+		                	</ul>
+		                </li>
+		            </ul>
+		        </div>
+		        <!-- /#sidebar-wrapper -->
+
+				<!-- global nav page -->
+				<nav id="global-nav">
+					<ul class="flex">
+						<li>Users</li>
+						<li><a href="app-user.html">App Users</a></li>
+						<li><a href="edit-user.html">Edit Users</a></li>
+					</ul>
+				</nav>
+				<!-- /global nav page -->
+
+				<!-- main content page -->
+				<section class="section-block">
+					<form action="edit" id="editUser">
+						<h4>Edit Profile</h4>
+						<div class="form-profile">
+							<fieldset>
+								<label for="editFirstName">First Name</label>
+								<input type="name" id="editFirstName">
+							</fieldset>
+							<fieldset>
+								<label for="editLastName">Last Name</label>
+								<input type="name" id="editLastName">
+							</fieldset>
+							<fieldset>
+								<label for="editEmail">Email</label>
+								<input type="email" id="editEmail">
+							</fieldset>
+							<fieldset>
+								<label for="editPhone">Phone Number</label>
+								<input type="tel" id="editPhone">
+							</fieldset>
+							<fieldset>
+								<label for="editUsername">Username</label>
+								<input type="text" id="editUsername">
+							</fieldset>
+							<fieldset>
+								<label for="editLocation">Location</label>
+								<input type="text" id="editLocation">
+							</fieldset>
+							<button type="button" class="btn btn-primary">Update</button>
+						</div>
+					</form>
+				</section>
+				<!-- /main content page -->
+    		</div>
+    		<!-- /#wrapper -->
+		</main>
+	<!-- end main page -->
+
+	<!-- start footer page -->
+		<footer>
+			Copyright 2019 Plate Holdings Limited
+		</footer>
+	<!-- end footer page -->
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
